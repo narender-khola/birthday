@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player with Image</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        audio {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>    
+    <!-- Centered image -->
+    <img src="/static/sumeet.jpg" alt="Image" />
+
+    <!-- Autoplay and looped audio -->
+    <audio controls autoplay loop>
+        <source src="/audio/birthday.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
